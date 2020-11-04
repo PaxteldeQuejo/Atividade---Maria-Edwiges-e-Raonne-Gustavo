@@ -67,19 +67,15 @@ def contar_nulo():
 
 # Testando
 
-c1 = Candidato('Zeraldo', 'PT', 1234)
+c1 = Candidato('Ednaldo', 'PT', 1234)
 candidatos.append(c1)
 
-c2 = Candidato('Gustavo', 'PSDB', 3210)
+c2 = Candidato('Ronaldo', 'PSDB', 3210)
 candidatos.append(c2)
-
-c3 = Candidato('Joao Vitor', 'PSOL', 4231)
-candidatos.append(c3)
 
 votar(123456789, 1234)
 votar(67854312609, 3210)
 votar(381278427893578941, 120389120391)
-votar(12312387123, 4231)
 
 for candidato in candidatos:
     print(f'O candidato {candidato.get_nome} conseguiu {contar_voto(candidato.get_numero)} votos')
